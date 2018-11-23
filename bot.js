@@ -1,8 +1,8 @@
+const settings = require("./config.json"); 
 const Discord = require('discord.js');
+const initcmd = settings.initcmd;
+const id = settings.id;
 const client = new Discord.Client();
-
-const developers = ["314522365218521099"]
-const adminprefix = "-";
 
 client.on('ready', () => {
   console.log(`Hi ${client.user.tag} , This Code by : Kahrbaa `);
@@ -10,8 +10,8 @@ client.on('ready', () => {
   console.log(`i Have  [ " ${client.guilds.size} " ]`);
 });
 
-const developers = id
-const adminprefix = initcmd;
+const developers = 466012765090217994
+const adminprefix = -
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
       if (!developers.includes(message.author.id)) return;
